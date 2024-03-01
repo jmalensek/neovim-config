@@ -1,3 +1,10 @@
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- enable 24-bit colour
+vim.opt.termguicolors = true
+
 require('plugins')
 require('user.lsp')
 
@@ -11,6 +18,23 @@ require('lspconfig').lua_ls.setup {
 		}
 	}
 }
+
+
+--Nvim Tree setup
+require("nvim-tree").setup({
+	sort = {
+		sorter = "case_sensitive",
+	},
+	view = {
+		width = 30,
+	},
+	renderer = {
+		group_empty = true,
+	},
+	filters = {
+		dotfiles = true,
+	},
+})
 
 -- Setup Error Lens
 require("error-lens").setup(client, {

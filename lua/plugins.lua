@@ -70,6 +70,9 @@ return packer.startup(function(use)
 		requires = { { 'nvim-lua/plenary.nvim' } }
 	}
 
+	-- File Manager
+	use('nvim-tree/nvim-tree.lua')
+
 	-- Web-Devicons
 	use('nvim-tree/nvim-web-devicons')
 
