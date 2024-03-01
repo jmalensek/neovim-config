@@ -63,6 +63,8 @@ return packer.startup(function(use)
 
 	use('hrsh7th/cmp-nvim-lsp')
 
+	use('nvim-treesitter/nvim-treesitter')
+
 	-- Telescope
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',
