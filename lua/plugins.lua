@@ -53,6 +53,7 @@ return packer.startup(function(use)
 
 	use('neovim/nvim-lspconfig') -- enable LSP
 
+	-- Mason for LSP
 	use('williamboman/mason.nvim')
 
 	use('williamboman/mason-lspconfig.nvim')
@@ -63,17 +64,11 @@ return packer.startup(function(use)
 
 	use('hrsh7th/cmp-nvim-lsp')
 
-	use('nvim-treesitter/nvim-treesitter')
+	-- Plenary
+	use('nvim-lua/plenary.nvim')
 
 	-- Telescope
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.5',
-		-- or                            , branch = '0.1.x',
-		requires = { { 'nvim-lua/plenary.nvim' } }
-	}
-
-	-- File Manager
-	use('nvim-tree/nvim-tree.lua')
+	use { 'nvim-telescope/telescope.nvim', tag = '0.1.5' }
 
 	-- Web-Devicons
 	use('nvim-tree/nvim-web-devicons')
@@ -83,6 +78,9 @@ return packer.startup(function(use)
 		'chikko80/error-lens.nvim',
 		requires = { 'nvim-telescope/telescope.nvim' }
 	}
+
+	-- Paranthesis autoclose
+	use('m4xshen/autoclose.nvim')
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
