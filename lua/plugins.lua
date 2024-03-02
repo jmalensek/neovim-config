@@ -47,7 +47,7 @@ packer.init({
 	},
 })
 
--- Install your plugins here
+-- Installed Plugins
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Have packer manage itself	
 
