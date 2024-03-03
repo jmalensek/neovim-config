@@ -20,10 +20,7 @@ require('lspconfig').lua_ls.setup {
 }
 
 -- Calls all config files
-require('user.configs.autoclose-config')
-require('user.configs.treesitter-config')
-require('user.configs.telescope-config')
-require('user.configs.error-lens-config')
+require('user.configs')
 
 --Enables Line Numbering
 vim.wo.number = true
