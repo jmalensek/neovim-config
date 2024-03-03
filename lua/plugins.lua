@@ -64,6 +64,9 @@ return packer.startup(function(use)
 
 	use('hrsh7th/cmp-nvim-lsp')
 
+	-- Treesitter
+	use('nvim-treesitter/nvim-treesitter')
+
 	-- Plenary
 	use('nvim-lua/plenary.nvim')
 
@@ -74,13 +77,13 @@ return packer.startup(function(use)
 	use('nvim-tree/nvim-web-devicons')
 
 	-- Error Lens
-	use {
-		'chikko80/error-lens.nvim',
-		requires = { 'nvim-telescope/telescope.nvim' }
-	}
+	use('chikko80/error-lens.nvim')
 
 	-- Paranthesis autoclose
 	use('m4xshen/autoclose.nvim')
+
+	-- Github Copilot
+	use('github/copilot.vim')
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
