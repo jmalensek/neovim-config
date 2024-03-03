@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/jakam/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["deferred-clipboard.nvim"] = {
+    loaded = true,
+    path = "/home/jakam/.local/share/nvim/site/pack/packer/start/deferred-clipboard.nvim",
+    url = "https://github.com/EtiamNullam/deferred-clipboard.nvim"
+  },
   ["error-lens.nvim"] = {
     loaded = true,
     path = "/home/jakam/.local/share/nvim/site/pack/packer/start/error-lens.nvim",
