@@ -26,7 +26,4 @@ require('user.configs')
 vim.wo.number = true
 
 -- Indent options
-vim.opt.shiftwidth = 4
-
--- Something something clipboard
-vim.api.nvim_set_option("clipboard", "unnamed")
+vim.opt.shiftwidth = 2
