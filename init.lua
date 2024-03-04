@@ -24,3 +24,6 @@ require('user.configs')
 
 --Enables Line Numbering
 vim.wo.number = true
+
+-- Indent options
+vim.opt.shiftwidth = 4

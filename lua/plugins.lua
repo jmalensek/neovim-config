@@ -85,9 +85,6 @@ return packer.startup(function(use)
 	-- Github Copilot
 	use('github/copilot.vim')
 
-	-- OS synchrinized clipboard
-	use('EtiamNullam/deferred-clipboard.nvim')
-
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
