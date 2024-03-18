@@ -51,16 +51,21 @@ packer.init({
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Have packer manage itself	
 
-	use('neovim/nvim-lspconfig') -- enable LSP
-
-	-- Mason for LSP
+	-- Mason and LSP
 	use('williamboman/mason.nvim')
-
 	use('williamboman/mason-lspconfig.nvim')
+	use('neovim/nvim-lspconfig')
 
+	-- Autocompletion
 	use('hrsh7th/nvim-cmp')
-
 	use('hrsh7th/cmp-nvim-lsp')
+	use('hrsh7th/cmp-buffer')
+	use('hrsh7th/cmp-path')
+
+	-- Code snippet plugins
+	use('L3MON4D3/LuaSnip')
+	use('saadparwaiz1/cmp_luasnip')
+	use('rafamadriz/friendly-snippets')
 
 	-- Treesitter
 	use('nvim-treesitter/nvim-treesitter')
