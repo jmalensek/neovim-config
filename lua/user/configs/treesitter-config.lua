@@ -1,5 +1,7 @@
 -- Treesitter configuration
-require 'nvim-treesitter.configs'.setup {
+local treesitter = require('nvim-treesitter.configs')
+
+treesitter.setup {
 	highlight = {
 		enable = true,
 		-- Setting this to true will run `:h syntax` and tree-sitter at the same time.

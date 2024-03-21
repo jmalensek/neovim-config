@@ -1,5 +1,7 @@
 -- Error Lens configuration
-require('error-lens').setup(client, {
+local error_lens = require('error-lens')
+
+error_lens.setup(client, {
 	-- this setting tries to auto adjust the colors
 	-- based on the diagnostic-highlight groups and your
 	-- theme background color with a color blender
@@ -7,10 +9,10 @@ require('error-lens').setup(client, {
 	auto_adjust = {
 		enable = false,
 		fallback_bg_color = nil, -- mandatory if enable true (e.g. #281478)
-		step = 7,    -- inc: colors should be brighter/darker
-		total = 30   -- steps of blender
+		step = 7,              -- inc: colors should be brighter/darker
+		total = 30             -- steps of blender
 	},
-	prefix = 4,          -- distance code <-> diagnostic message
+	prefix = 4,              -- distance code <-> diagnostic message
 	-- default colors
 	colors = {
 		error_fg = "#FF6363", -- diagnostic font color

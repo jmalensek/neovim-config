@@ -87,6 +87,7 @@ return packer.startup(function(use)
 
 	-- Github Copilot
 	use('github/copilot.vim')
+	use('CopilotC-Nvim/CopilotChat.nvim')
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
