@@ -29,14 +29,20 @@ cmp.setup({
 		["<C-b>"] = cmp.mapping.scroll_docs(-4),
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-		["<C-e>"] = cmp.mapping.abort(),        -- close completion window
+		["<C-e>"] = cmp.mapping.abort(),      -- close completion window
 		["<CR>"] = cmp.mapping.confirm({ select = false }),
 	}),
 	-- sources for autocompletion
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" }, -- LSP
-		{ name = "luasnip" },  -- snippets
-		{ name = "buffer" },   -- text within the current buffer
-		{ name = "path" },     -- file system paths
+		{ name = "luasnip" }, -- snippets
+		{ name = "buffer" }, -- text within the current buffer
+		{ name = "path" },   -- file system paths
 	}),
+
+	-- Styles autocompletion menu
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
+	}
 })
