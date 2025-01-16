@@ -74,13 +74,7 @@ return packer.startup(function(use)
 	use('nvim-lua/plenary.nvim')
 
 	-- Telescope
-	use { 'nvim-telescope/telescope.nvim', tag = '0.1.5' }
-
-	-- Web-Devicons
-	use('nvim-tree/nvim-web-devicons')
-
-	-- Error Lens
-	use('chikko80/error-lens.nvim')
+	use { 'nvim-telescope/telescope.nvim' }
 
 	-- Paranthesis autoclose
 	use('m4xshen/autoclose.nvim')

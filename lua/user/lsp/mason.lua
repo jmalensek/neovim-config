@@ -12,7 +12,6 @@ if not status_ok_1 then
 end
 
 local servers = {
-	"tsserver",
 	"cssmodules_ls",
 	"emmet_ls",
 	"html",
@@ -35,8 +34,8 @@ local servers = {
 	"terraformls",
 	"puppet",
 	"cmake",
-	"kotlin_language_server",
 	"marksman",
+	"jdtls",
 }
 
 -- Here we declare which settings to pass to the mason, and also ensure servers are installed. If not, they will be installed automatically.
